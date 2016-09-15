@@ -25,7 +25,7 @@ def ask(num):
             verb,subject = verbs[rv],subj[rs]
         ans = conju[verb][rs]
         u_ans = input("Conjugate "+verb+" ("+subject+"): ").lower()
-        if (ans == u_ans) or (ans == "essaie" and u_ans == "essayes") or (ans == "essaies" and u_ans == "essayes"):
+        if (ans == u_ans) or (ans == "essaie" and u_ans == "essaye") or (ans == "essaies" and u_ans == "essayes"):
             total += 1
             print("Correct!")
         else:
@@ -54,7 +54,7 @@ conju = {"avoir":["ai","as","a","avons","avez","ont"],
          "partir":["pars","pars","part","partons","partez","partent"],
          "dormir":["dors","dors","dort","dormons","dormez","dorment"],
          "voir":["vois","vois","voit","voyons","voyez","voient"],
-         "essayer":["essaie","essaies","essaie","essayons","essaient"],
+         "essayer":["essaie","essaies","essaie","essayons","essayez","essaient"],
          "s'asseoir":["m'assieds","t'assieds","se assied","nous asseyons","vous asseyez","se asseyent"],
          "mentir":["mens","mens","ment","mentons","mentez","mentent"],
          "sentir":["sens","sens","sent","sentons","sentez","sentent"],
